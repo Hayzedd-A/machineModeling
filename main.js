@@ -72,7 +72,7 @@ function loadResponse(result) {
     src: $('#previewImage').attr('src')
   })
   $responseDiv = $('<div>', {
-    html: "<span> predicted image name </span>",
+    html: "<span>${result}</span>",
     class: 'responseItem'
   })
 
@@ -98,7 +98,7 @@ $('.button').click(async function() {
     formData.append('image', file);
 
     try {
-      const response = await fetch('https://api.example.com/upload', {
+      const response = await fetch('https://multi-class-fruit.onrender.com/predict/', {
         method: 'POST',
         body: formData,
       });
@@ -107,7 +107,7 @@ $('.button').click(async function() {
 
       if (response.ok) {
         const responseData = await response.json();
-        loadResponse()
+        loadResponse(responseData)
         console.log('API Response:', responseData);
       } else {
         console.error('API Error:', response.statusText);
