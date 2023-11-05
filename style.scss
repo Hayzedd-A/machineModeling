@@ -1,0 +1,86 @@
+body {
+    background-color: #3498db;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fbfbcf;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    display: grid;
+    gap: 8px;
+}
+
+.upload-container {
+    text-align: center;
+    position: relative;
+}
+
+.drop-area {
+    border: 2px dashed #fbfbcf;
+    padding: 20px;
+    cursor: pointer;
+}
+.imageDrop {
+    display: grid;
+    gap: 1em;
+}
+
+#previewImage {
+    position: absolute;
+    // left: 50%;
+    // top: 50%;
+    // transform: translate(-200px, -200px);
+    bottom: 0;
+    max-width: 100%;
+    max-height: 400px;
+    display: none;
+}
+.button {
+    display: none;
+    background-color: aqua;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    height: 3em;
+    cursor: pointer;
+    letter-spacing: 4px;
+    position: relative;
+    svg {
+        display: none;
+        position: absolute;
+        right: 1em;
+    }    
+    &:hover {
+        background-color: darken($color: aqua, $amount: 10);
+        color: white;
+    }
+    &:active {
+        scale: 0.95;
+    }
+}
+.samples {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #63b0e4;
+    padding: 8px;
+    border-radius: 8px;
+    justify-content: stretch;
+    gap: 8px;
+    .responseItem {
+        background-color: #fbfbcf;
+        padding: 8px;
+        color: #444;
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        flex-flow: row-reverse;
+        justify-content: start;
+        img {
+            width: 64px;
+        }
+    }
+}
+

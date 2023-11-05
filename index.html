@@ -1,0 +1,30 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Capstone Model</title>
+ </head>
+ <body>
+    <div class="container">
+        <h1>Upload Image for testing</h1>
+        <div class="imageDrop">
+            <div class="upload-container">
+                <div class="drop-area" id="dropArea">
+                    <p>Drag and drop an image here or click to select one</p>
+                    <input type="file" id="fileInput" accept="image/*" style="display: none;">
+                </div>
+                <img src="" id="previewImage" alt="Preview Image">
+            </div>
+            <div class="button">
+                <span class="submit">SUBMIT</span>
+                <svg id="Icons" height="48px" width="32px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#232323;}</style></defs><rect class="cls-1" height="4" rx="2" width="16" x="4" y="1"/><rect class="cls-1" height="4" rx="2" width="16" x="4" y="19"/><path class="cls-1" d="M17.91,7A5.993,5.993,0,0,1,6.09,7Z"/><path class="cls-1" d="M17.91,17H6.09a5.991,5.991,0,0,1,10.15-3.24A5.832,5.832,0,0,1,17.91,17Z"/></svg>
+            </div>
+        </div>
+        <div class="samples"></div>
+    </div>
+    <script src="jquery.js"></script>
+    <script src="main.js"></script>
+ </body>
+ </html>
