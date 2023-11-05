@@ -72,7 +72,7 @@ function loadResponse(result) {
     src: $('#previewImage').attr('src')
   })
   $responseDiv = $('<div>', {
-    html: "<span>${result}</span>",
+    html: "<span>" +result+ "</span>",
     class: 'responseItem'
   })
 
