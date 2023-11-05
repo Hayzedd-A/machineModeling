@@ -72,7 +72,7 @@ function loadResponse(result) {
     src: $('#previewImage').attr('src')
   })
   $responseDiv = $('<div>', {
-    html: "<span> The Image is a "+${result.data.predicted_class}+" with a confidence of "+${result.data.confidence}+"%</span>",
+    html: `<span> The Image is a ${result.data.predicted_class} with a confidence of ${result.data.confidence}%</span>`,
     class: 'responseItem'
   })
 
