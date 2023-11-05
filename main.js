@@ -98,7 +98,7 @@ $('.button').click(async function() {
     formData.append('image', file);
 
     try {
-      const response = await fetch('https://multi-class-fruit.onrender.com/predict/', {
+      const response = await fetch('https://multi-class-fruit.onrender.com/predict', {
         method: 'POST',
         body: formData,
       });
